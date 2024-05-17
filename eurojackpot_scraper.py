@@ -63,5 +63,5 @@ for year in range(2012, 2025):
 
 df = pd.DataFrame(all_data)
 
-file_name = 'results_2012_to_2024.xlsx'
-df.to_excel(file_name, index=False)
+file_name = 'results_2012_to_2024.csv'
+df.to_csv(file_name, index=False)
