@@ -1,1 +1,1 @@
-# eurojackpot_results_scraper_ml
+# Eurojackpot results - Scraper & ML
