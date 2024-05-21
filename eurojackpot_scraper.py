@@ -57,11 +57,12 @@ for year in range(2012, 2025):
             else:
                 print(f"No number data found for date {formatted_date}")
         else:
-            print("No date tag found")
+            continue
 
     all_data.extend(data)
 
 df = pd.DataFrame(all_data)
+df = df.sort_values('Date', ascending=False)
 
 file_name = 'results_2012_to_2024.csv'
 df.to_csv(file_name, index=False)
